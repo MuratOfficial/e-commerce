@@ -6,8 +6,8 @@ function Navbar() {
     
 
   return (
-    <div className='w-full px-8 flex flex-row justify-between items-center '>
-        <div className='flex flex-row gap-4'>
+    <div className=' w-full fixed border-b z-10 px-8 flex flex-row justify-between items-center bg-white'>
+        <div className='flex flex-row gap-4 items-center'>
             <a href='#' className='font-(family-name:--font-inter) uppercase font-bold text-2xl pr-2'>
 
                     LuxuryBoom
@@ -30,7 +30,7 @@ function Navbar() {
 
 
                 </div>
-                <button className='flex py-2 border-l border-r px-4 flex-row gap-4 uppercase items-center text-xs font-semibold'>
+                <button className='flex py-3 border-l border-r px-4 flex-row gap-4 uppercase items-center text-xs font-semibold'>
 
                     Осы жерден іздеңіз
 
@@ -39,7 +39,7 @@ function Navbar() {
         </div>
         
         {/** Тут блок логина и корзинки */}
-        <div className=' flex flex-row gap-4 items-center'>
+        <div className=' flex text-xs flex-row gap-4 items-center'>
                <a href='#'>
                     Жүйеге кіру
 
