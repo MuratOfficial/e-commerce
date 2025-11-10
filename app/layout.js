@@ -18,7 +18,7 @@ const inter = Inter({
 
 const ubuntu = Ubuntu({
   subsets:['cyrillic', 'latin'],
-  weight:'300'
+  weight:['300', '400', '500', '700']
 })
 
 export const metadata = {
