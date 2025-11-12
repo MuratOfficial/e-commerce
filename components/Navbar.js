@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar({count}) {
     
 
     
@@ -47,7 +47,7 @@ function Navbar() {
 
             <button>
 
-                Себет
+           {count}
             </button>
 
         </div>
