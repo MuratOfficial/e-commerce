@@ -9,13 +9,6 @@ function Empty({bgColor, title="Empty"}) {
   const [colors, setColors] = useState("bg-red-500")
   
 
-
-  // const handleCount = (amoutn) =>{
-
-  //   setCount
-  //     count + amoutn
-  // }
-
   return (
     <div className={'w-full h-screen text-5xl flex flex-col justify-center items-center'}>
 

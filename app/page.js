@@ -1,13 +1,13 @@
-"use client"
+// "use client"
 
 import BgVideo from "@/components/BgVideo";
+import Carousel from "@/components/Carousel";
 import Circle from "@/components/Circle";
 import Empty from "@/components/Empty";
 import FourGrid from "@/components/FourGrid";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
-import { useState } from "react";
 
 const productList = [
        {img:"bg-[url(https://static.bershka.net/assets/public/50c3/da6c/a1d64b28ae84/d558b21c7eef/D_slide_man_jackets_-1/D_slide_man_jackets_-1.jpg?ts:1762436939806&w:1440)]", title:"Көйлек"},
@@ -22,15 +22,10 @@ const productList = [
  export default function Home() {
 
 
-       const [basketCount, setBasketCoiunt] = useState(0)
 
   return (
     <main className=" bg-white min-h-screen">
-      <Navbar count={basketCount}/>
-      
-
-      <Circle/>
-
+      <Navbar />
      
        <Hero title="аяқ-киім" classname="bg-[url(/hero1.jpg)]" classname2="bg-[url(/hero2.jpg)]" />
 
@@ -52,7 +47,8 @@ const productList = [
 
        <BgVideo title="LuxuryBoom" title2="MBRS" desc="Тіркел де, алғашқы тауарға 50% жеңілдік ал! " buttonName="Көбірек көру" />   
       
-        <Empty/>
+      
+      <Carousel/>
         
         {/* Catalogs */}
 
@@ -67,8 +63,5 @@ const productList = [
     </main>
   );
 }
-
-
-// npm run dev
 
 

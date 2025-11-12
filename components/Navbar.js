@@ -46,8 +46,7 @@ function Navbar({count}) {
                </a>
 
             <button>
-
-           {count}
+                    Себет
             </button>
 
         </div>
