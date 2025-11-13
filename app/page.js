@@ -1,5 +1,6 @@
 // "use client"
 
+import Banner from "@/components/Banner";
 import BgVideo from "@/components/BgVideo";
 import Carousel from "@/components/Carousel";
 import Circle from "@/components/Circle";
@@ -49,11 +50,7 @@ const productList = [
       
       
       <Carousel/>
-        
-        {/* Catalogs */}
-
-
-        {/*  Billboard   */}
+              <Banner className={`bg-black bg-contain bg-no-repeat bg-center bg-[url(https://cdn-images.dzcdn.net/images/artist/4801f1e34988692cfa2088f74052264a/1900x1900-000000-81-0-0.jpg)]`}  text1="luxuryBoommusic" text2="Men dep oila" text3="Yenlik" />
 
 
         {/* Catalog */}
