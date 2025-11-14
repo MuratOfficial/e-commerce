@@ -22,7 +22,9 @@ function CarouselCard({
 
       </p>
 
-      {discount  ?  <div className='flex py-1 flex-col'>
+      {discount  ?  
+      
+      <div className='flex py-1 flex-col'>
         <p className=' text-red-600'>
           {priceWithDiscount.toFixed(2)} € <span className='p-0.5 text-neutral-200 rounded-sm bg-red-600'>
             -{discountPercent}%
@@ -33,10 +35,7 @@ function CarouselCard({
 
         </p>
 
-
-      </div>:<p>
-        {price} €
-      </p>}
+      </div>:<p>{price} €</p>}
       
 
       </div>

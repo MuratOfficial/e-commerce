@@ -5,10 +5,12 @@ import BgVideo from "@/components/BgVideo";
 import Carousel from "@/components/Carousel";
 import Circle from "@/components/Circle";
 import Empty from "@/components/Empty";
+import Footer from "@/components/Footer";
 import FourGrid from "@/components/FourGrid";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
+import Subscription from "@/components/Subscription";
 
 const productList = [
        {img:"bg-[url(https://static.bershka.net/assets/public/50c3/da6c/a1d64b28ae84/d558b21c7eef/D_slide_man_jackets_-1/D_slide_man_jackets_-1.jpg?ts:1762436939806&w:1440)]", title:"Көйлек"},
@@ -28,7 +30,7 @@ const productList = [
     <main className=" bg-white min-h-screen">
       <Navbar />
      
-       <Hero title="аяқ-киім" classname="bg-[url(/hero1.jpg)]" classname2="bg-[url(/hero2.jpg)]" />
+       <Hero title="аяқ-киім" classname=" bg-[url(https://static.bershka.net/assets/public/e213/41cd/2b1740b2b21f/2f197df11a38/06759730800-a7o/06759730800-a7o.jpg?ts=1763034161557&w=1920)]" classname2="bg-[url(/hero2.jpg)]" />
 
 {/** Список категорий  */}
        <div className="w-full grid grid-cols-3 group">
@@ -41,7 +43,7 @@ const productList = [
 
 {/** Билбоард */}
 
-       <Hero title="сөмке" classname="bg-[url(https://images.pexels.com/photos/30886134/pexels-photo-30886134.jpeg)]" classname2="bg-[url(https://images.pexels.com/photos/34515879/pexels-photo-34515879.jpeg)]" />
+       <Hero title="сөмке" classname="bg-[url(https://static.pxlecdn.com/photos/756551478/xl/1825283cb60ac530e565.jpg)]" />
 
 
        <FourGrid/> 
@@ -50,13 +52,10 @@ const productList = [
       
       
       <Carousel/>
-              <Banner className={`bg-black bg-contain bg-no-repeat bg-center bg-[url(https://cdn-images.dzcdn.net/images/artist/4801f1e34988692cfa2088f74052264a/1900x1900-000000-81-0-0.jpg)]`}  text1="luxuryBoommusic" text2="Men dep oila" text3="Yenlik" />
+       <Banner className={`bg-black bg-contain bg-no-repeat bg-center bg-[url(https://cdn-images.dzcdn.net/images/artist/4801f1e34988692cfa2088f74052264a/1900x1900-000000-81-0-0.jpg)]`}  text1="luxuryBoommusic" text2="Men dep oila" text3="Yenlik" />
 
-
-        {/* Catalog */}
-
-        {/* Billboard */}
-
+       <Subscription title={`ЖАңалыөтарды һткізіп алма`} desc={`Жаңалықтарға жазылу ұшін төмендегі батырманы бас. Күнделікті ерекше тауарлард тізімі`} buttonName={`Жазылу`} />
+       <Footer/>
     </main>
   );
 }

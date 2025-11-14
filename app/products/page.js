@@ -6,6 +6,7 @@ import React from 'react'
     <div className=' w-full h-screen bg-gray-500 text-5xl t'>
 
     <Navbar/>
+    
 
     </div>
     
