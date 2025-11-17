@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter, FaTiktok, FaSnapchat, FaYoutube, FaPinterest, FaSpotify } from "react-icons/fa";
 import { LuMessageCircle } from "react-icons/lu";
+import Credentials from './Credentials';
 
 function Footer() {
 
@@ -120,7 +121,7 @@ function Footer() {
         </div>
 
                 <div className='h-px bg-black/40 w-full col-span-4'></div>
-
+                <Credentials/>
     </div>
   )
 }

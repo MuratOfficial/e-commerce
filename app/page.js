@@ -28,7 +28,7 @@ const productList = [
 
   return (
     <main className=" bg-white min-h-screen">
-      <Navbar />
+     
      
        <Hero title="аяқ-киім" classname=" bg-[url(https://static.bershka.net/assets/public/e213/41cd/2b1740b2b21f/2f197df11a38/06759730800-a7o/06759730800-a7o.jpg?ts=1763034161557&w=1920)]" classname2="bg-[url(/hero2.jpg)]" />
 
@@ -55,7 +55,7 @@ const productList = [
        <Banner className={`bg-black bg-contain bg-no-repeat bg-center bg-[url(https://cdn-images.dzcdn.net/images/artist/4801f1e34988692cfa2088f74052264a/1900x1900-000000-81-0-0.jpg)]`}  text1="luxuryBoommusic" text2="Men dep oila" text3="Yenlik" />
 
        <Subscription title={`ЖАңалыөтарды һткізіп алма`} desc={`Жаңалықтарға жазылу ұшін төмендегі батырманы бас. Күнделікті ерекше тауарлард тізімі`} buttonName={`Жазылу`} />
-       <Footer/>
+       
     </main>
   );
 }

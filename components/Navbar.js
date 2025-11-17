@@ -1,29 +1,43 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
+import SideBar from './SideBar';
 
 function Navbar({count}) {
     
-
+    const [sideBarOn, setSideBarOn] = useState(false);
     
 
+    const handleShow = () => {
+        if(sideBarOn){
+            setSideBarOn(false)
+        }else{
+            setSideBarOn(true)
+        }
+
+    }
+
   return (
-    <div className=' w-full fixed border-b z-10 px-8 flex flex-row justify-between items-center bg-white'>
-        <div className='flex flex-row gap-4 items-center'>
+
+    <div>
+        <div className=' w-full fixed border-b z-50  flex flex-row justify-between items-center bg-white'>
+            <div className='border-b pl-8  flex flex-row gap-4 items-center'>
             <a href='#' className='font-(family-name:--font-inter) uppercase font-bold text-2xl pr-2'>
 
                     LuxuryBoom
                 </a>
 
                 <div className='flex flex-row gap-4 uppercase items-center text-xs font-semibold'>
-                    <a href='#'>
+                    <a onClick={()=> handleShow()} href='#'>
                         Әйелдер
 
                     </a>
 
-                    <a href='#'>
+                    <a onClick={()=> handleShow()} href='#'>
                         Ерлер
 
                     </a>
-                     <a href='#'>
+                     <a onClick={()=> handleShow()} href='#'>
                        By influencers
 
                     </a>
@@ -39,7 +53,7 @@ function Navbar({count}) {
         </div>
         
         {/** Тут блок логина и корзинки */}
-        <div className=' flex text-xs flex-row gap-4 items-center'>
+        <div className='border-b pr-8 z-50 flex text-xs flex-row gap-4 items-center'>
                <a href='#'>
                     Жүйеге кіру
 
@@ -50,11 +64,20 @@ function Navbar({count}) {
             </button>
 
         </div>
+        
+
+      
 
         
 
 
+        </div>
+          {sideBarOn && <SideBar  />} 
+
     </div>
+
+
+
   )
 }
 
