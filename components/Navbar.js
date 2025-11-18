@@ -7,77 +7,53 @@ function Navbar({count}) {
     
     const [sideBarOn, setSideBarOn] = useState(false);
     
-
     const handleShow = () => {
-        if(sideBarOn){
-            setSideBarOn(false)
-        }else{
-            setSideBarOn(true)
-        }
+        setSideBarOn(true);
+    }
+    
 
+    const handleSideBarClose = () => {
+        setSideBarOn(false);
     }
 
   return (
-
     <div>
-        <div className=' w-full fixed border-b z-50  flex flex-row justify-between items-center bg-white'>
-            <div className='border-b pl-8  flex flex-row gap-4 items-center'>
-            <a href='#' className='font-(family-name:--font-inter) uppercase font-bold text-2xl pr-2'>
-
+        <div className='w-full fixed border-b z-50 flex flex-row justify-between items-center bg-white'>
+            <div className='border-b pl-8 flex flex-row gap-4 items-center'>
+                <a href='/' className='font-(family-name:--font-inter) uppercase font-bold text-2xl pr-2'>
                     LuxuryBoom
                 </a>
 
                 <div className='flex flex-row gap-4 uppercase items-center text-xs font-semibold'>
-                    <a onClick={()=> handleShow()} href='#'>
+                    <a onClick={handleShow} href='#'>
                         Әйелдер
-
                     </a>
-
-                    <a onClick={()=> handleShow()} href='#'>
+                    <a onClick={handleShow} href='#'>
                         Ерлер
-
                     </a>
-                     <a onClick={()=> handleShow()} href='#'>
+                    <a onClick={handleShow} href='#'>
                        By influencers
-
                     </a>
-
-
                 </div>
+                
                 <button className='flex py-3 border-l border-r px-4 flex-row gap-4 uppercase items-center text-xs font-semibold'>
-
                     Осы жерден іздеңіз
-
                 </button>
-
-        </div>
+            </div>
         
-        {/** Тут блок логина и корзинки */}
-        <div className='border-b pr-8 z-50 flex text-xs flex-row gap-4 items-center'>
-               <a href='#'>
+    
+            <div className='border-b pr-8 z-50 flex text-xs flex-row gap-4 items-center'>
+                <a href='#'>
                     Жүйеге кіру
-
-               </a>
-
-            <button>
+                </a>
+                <button>
                     Себет
-            </button>
-
+                </button>
+            </div>
         </div>
-        
 
-      
-
-        
-
-
-        </div>
-          {sideBarOn && <SideBar  />} 
-
+        <SideBar isOpen={sideBarOn} onClose={handleSideBarClose} /> 
     </div>
-
-
-
   )
 }
 
