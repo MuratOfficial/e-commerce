@@ -6,7 +6,7 @@ function ProductPage() {
 
   const articleVariation = [
     {name:"Қара·Артикул.6793/046/800", color:"#000"},
-    {name:"Ақ·Артикул.6793/046/800", color:"#FFF"},
+    {name:"Ақ·Артикул.6793/046/800", color:"#FG444A"},
     {name:"Сұр·Артикул.6793/046/800", color:"#929292"},
     
   ]
