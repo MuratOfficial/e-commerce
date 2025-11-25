@@ -4,15 +4,18 @@ import React, { useState } from 'react'
 import { FiHeart } from "react-icons/fi";
 import BigButtons from './BigButtons';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import { useRouter } from 'next/navigation';
 
 function ProductItem({
-  imgs, title, price,  discount
+  imgs, title, price,  discount, id
 }) {
 
   const buttons = ["XS", "S", "M", "L", "XL"]
   const [favorite, setFavorite] = useState(false);
 
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  const router = useRouter();
 
   const handleFavorite = () => {
     if(favorite){
@@ -44,7 +47,7 @@ function ProductItem({
     const priceWithDiscount = price * (1-discount);
   const discountPercent = discount * 100;
   return (
-    <div className={'  relative group-hover:opacity-50 hover:opacity-100  h-[80vh] cursor-pointer  flex flex-col gap-0.5 '  }>
+    <div onClick={()=>router.push(`/products/${id}`)} className={'  relative group-hover:opacity-50 hover:opacity-100  h-[80vh] cursor-pointer  flex flex-col gap-0.5 '  }>
       
       {/** Здесь кнопки смены картинок */}
       {currentIndex !== 0 && <button onClick={handleLeft} className=' cursor-pointer absolute top-[45%] left-2'>
