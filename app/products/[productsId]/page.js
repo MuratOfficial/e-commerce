@@ -1,8 +1,11 @@
 import DescPrice from '@/components/DescPrice'
 import Gallery from '@/components/Gallery'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function ProductPage() {
+
+  
+
 
   const articleVariation = [
     {name:"Қара·Артикул.6793/046/800", color:"#000"},
